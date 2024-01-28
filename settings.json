@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "grunt.autoDetect": "on",
+    "terminal.integrated.commandsToSkipShell": [
+        "code runner"
+    ],
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "terminal.integrated.shellIntegration.suggestEnabled": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.runInTerminal": true,
+    "files.autoSave": "onWindowChange",
+    "editor.cursorStyle": "line-thin",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "settingsSync.ignoredExtensions": [
+        
+    ]
+}
