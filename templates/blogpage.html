@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ blog_title }}</title>
+</head>
+<body>
+
+    <!-- Blog Title and Categories -->
+    <div class="row">
+        <h2>{{ blog_title }}</h2>
+        <div class="row">
+            <h2>{{ blog_title }}</h2>
+            <div class="categories" style="margin-left: 20px; display: inline-block;">
+                <ul style="list-style-type: none; padding: 0; display: flex; gap: 15px;">
+                    {% for category in categories %}
+                        <li>
+                            <a href="{% url 'posts_by_category' category_slug=category.slug %}" style="text-decoration: none; color: #007bff;">
+                                {{ category.name }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Categories Section -->
+        <div class="categories" style="margin-left: 20px; display: inline-block;">
+            <ul style="list-style-type: none; padding: 0; display: flex; gap: 15px;">
+                {% for category in categories %}
+                    <li>
+                        <a href="{% url 'posts_by_category' category_slug=category.slug %}" style="text-decoration: none; color: #007bff;">
+                            {{ category.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

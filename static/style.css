@@ -1,0 +1,22 @@
+body {
+    background-color: #cccccc;
+}
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Adjust the space between category links */
+}
+
+.categories li {
+    font-weight: bold;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #007bff; /* Change color to blue */
+}
+
+.categories a:hover {
+    color: #0056b3; /* Hover effect */
+}
